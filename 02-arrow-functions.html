@@ -10,10 +10,15 @@
 
   <script>
 
+  // Função sintaxe tradicional
+  function nomeDaFuncao() {
+    exibirNaTela('Funcao de sintaxe tradicional');
+  }
 
-
-    //1ª Digitação (aqui) 
-
+  // Função anônima
+  var outraFuncao = function() {
+    exibirNaTela('Outra forma de declarar função');
+  }
 
 
     // Chamada da função
@@ -26,11 +31,11 @@
     calcule a diferença entre eles e retorne o resultado
     para uma variável externa */
 
+  function exercicio(valor1,valor2) {
+    return valor1 - valor2;
+  }
 
-
-    //2ª Digitação (aqui) 
-
-
+  let resultado = exercicio (10,3);
 
     exibirNaTela(resultado);
 
@@ -45,7 +50,7 @@
 
     const ola = nome => exibirNaTela('Olá ' + nome);
 
-    ola('Ignacio');
+    ola('Ignacio'); 
 
     // Versão simplificada (Arrow function com retorno IMPLÍCITO)
     const metade = valor => valor / 2;
@@ -68,7 +73,11 @@
 
     
 
-    //3ª Digitação (aqui) 
+    let convertMaiuscula = nome => nome.toUpperCase();
+
+    exibirNaTela(converterMaiuscula('Vitor'));
+    exibirNaTela(converterMaiuscula('Maria'));
+    exibirNaTela(converterMaiuscula('Linda'));
 
 
 
