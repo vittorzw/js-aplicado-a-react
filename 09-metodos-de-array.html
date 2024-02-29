@@ -18,7 +18,7 @@
 
 
 
-    //1ª Digitação (aqui) 
+    const numerosDobrados = numeros.map( numero => numero * 2);
 
 
 
@@ -41,8 +41,7 @@
 
 
 
-    //2ª Digitação (aqui) 
-
+      const nomesMaiusculo = nomes.map( nome =>nome.toLocaleLowerCase());
 
 
     exibirNaTela(nomes); // original
@@ -58,9 +57,10 @@
 
 
 
+      const vendas = [1500, 2000, 10_000, 1000, 500];
+      const meta = 1000;
 
-    //3ª Digitação (aqui) 
-
+      const vendasAcimaDaMeta = vendas.filter(venda => venda > meta);
 
 
 
@@ -82,9 +82,7 @@
     // Versão com (arrow function)
 
 
-
-
-    //4ª Digitação (aqui) 
+    const result = alunos.filter( aluno => aluno.startsWith('M') ?? aluno);
 
 
 
@@ -112,7 +110,7 @@
 
 
 
-    //5ª Digitação (aqui) 
+    const cursosFront = cursos.filter( curso)
 
 
 
@@ -127,7 +125,7 @@
 
 
 
-    //6ª Digitação (aqui) 
+    const titulos = cursos.map( curso => curso.titulo);
 
 
 
@@ -140,7 +138,6 @@
 
 
 
-    //7ª Digitação (aqui) 
 
 
 
@@ -170,8 +167,11 @@
 
     
 
-
-    //8ª Digitação (aqui) 
+    const somaCursosMobile = cursos 
+        .filter( curso => curso.categoria == 'Mobile')
+        .reduce((i, curso) => {
+return i +curso.preco
+        }, 0)
 
 
 

@@ -12,9 +12,11 @@
     /* 07-operador-rest
     Usamos para mesclar uma lista de argumentos/ parâmetros para uma função */
 
+    function ordenar (...parametros) {
+        return parametros.sort();
+    }
 
 
-    //1ª Digitação (aqui) 
 
 
 
@@ -30,7 +32,8 @@
 
 
 
-    //2ª Digitação (aqui) 
+      exibirNaTela(cursos)
+      exibirNaTela(ordenar(...cursos) );
 
 
 
@@ -56,7 +59,11 @@
 
 
 
-    //3ª Digitação (aqui) 
+    const testeOrdenar = (...parametros) => parametros.sort();
+
+    exibirNaTela( testeOrdenar ('Jair', 'Larissa', 'Andrea'));
+
+    exibirNaTela( testeOrdenar ('RHCP', 'Mega Death', 'Metalica', 'Rush', 'Floyd'));
 
 
 
@@ -65,7 +72,18 @@
 
 
 
-    //4ª Digitação (aqui) 
+    const somavalores = (...valores) => {
+      let total = 0;
+
+      for(let valor of valores) {
+            total += valores;
+      }
+      return total;
+    }
+
+    exibirNaTela( soma(10,20) );
+    exibirNaTela( soma(5, 3, 35, 55, 10,20) );
+
 
     
 
